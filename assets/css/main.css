@@ -114,10 +114,44 @@ input, select, textarea {
 
 /* Header Logo */
 
+section.headerSubpage img.headerLogo {
+	max-width: 10%;
+	margin: 5% 0 0 47%;
+}
+
 section img.headerLogo {
 	max-width: 15%;
-	margin: 2.5% 0 0 53%;
+	margin: 5% 0 0 54%;
 }
+
+@media screen and (max-width: 1680px) {
+
+	section img.headerLogo {
+		max-width: 15%;
+		margin: 5% 0 0 54%;
+	}
+
+}
+
+@media screen and (max-width: 1280px) {
+
+	section img.headerLogo {
+		max-width: 20%;
+		margin: 12% 0 0 40.5%;
+	}
+
+}
+
+@media screen and (max-width: 736px) {
+
+	section img.headerLogo {
+		max-width: 35%;
+		margin: 12% 0 0 33.5%;
+	}
+
+}
+
+
 
 /* Type */
 
@@ -2640,6 +2674,10 @@ section img.headerLogo {
 				width: 100%;
 			}
 
+	/*.imageGrid {
+	
+	}*/
+
 /* List */
 
 	ol {
@@ -3033,7 +3071,7 @@ section img.headerLogo {
 		}
 
 		.spotlights > section > .image {
-			background-position: center center;
+			background-position: 25% 25%;
 			background-size: cover;
 			border-radius: 0;
 			display: block;
@@ -3505,7 +3543,6 @@ section img.headerLogo {
 
 			#sidebar + #wrapper {
 				margin-left: 0;
-				padding-top: 3.5em;
 			}
 
 		}
@@ -3905,30 +3942,6 @@ section img.headerLogo {
 
 /* Intro */
 
-/*@keyframes slidy {
-	0% { left: 0%; }
-	20% { left: 0%; }
-	25% { left: -100%; }
-	45% { left: -100%; }
-	50% { left: -200%; }
-	70% { left: -200%; }
-	75% { left: -300%; }
-	95% { left: -300%; }
-	100% { left: -400%; }
-	}
-	
-	body { margin: 0; } 
-	div#slider { overflow: hidden; }
-	div#slider figure img { width: 20%; float: left; }
-	div#slider figure { 
-	  position: relative;
-	  width: 500%;
-	  margin: 0;
-	  left: 0;
-	  text-align: left;
-	  font-size: 0;
-	  animation: 30s slidy infinite; 
-	}*/
 	
 	/* #intro is Main header image where I want to put the event image slideshow */
 
@@ -3942,6 +3955,7 @@ section img.headerLogo {
 		background-size: 100% 100%;
 	}
 
+	
 		#intro p {
 			font-size: 1.25em;
 		}
@@ -3969,3 +3983,35 @@ section img.headerLogo {
 			}
 
 		}
+
+		div.inner section.team {
+			display: flex;
+			justify-content:space-between;
+			margin-top: 10%;
+		}
+
+		/*@keyframes slidy {
+			0% { left: 0%; }
+			20% { left: 0%; }
+			25% { left: -100%; }
+			45% { left: -100%; }
+			50% { left: -200%; }
+			70% { left: -200%; }
+			75% { left: -300%; }
+			95% { left: -300%; }
+			100% { left: -400%; }
+			}
+			
+			body { margin: 0; } 
+			div#slider { overflow: hidden; }
+			div#slider figure img { width: 20%; float: left; }
+			div#slider figure { 
+			  position: relative;
+			  width: 500%;
+			  margin: 0;
+			  left: 0;
+			  text-align: left;
+			  font-size: 0;
+			  animation: 30s slidy infinite; 
+			}*/
+		
