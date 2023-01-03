@@ -2905,8 +2905,8 @@ section img.headerLogo {
 			border-left: solid 1px rgba(255, 255, 255, 0.15);
 			display: inline-block;
 			line-height: 1;
-			margin-left: 1.5em;
-			padding: 0 0 0 1.5em;
+			margin-left: 2em;
+			padding: 0 0 0 2em;
 		}
 
 			ul.menu > li:first-child {
@@ -3131,7 +3131,7 @@ section img.headerLogo {
 			}
 
 		.spotlights > section:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.025);
+			background-color: rgba(0, 0, 0, .025);
 		}
 
 		.spotlights > section:nth-child(3) {
@@ -3139,6 +3139,15 @@ section img.headerLogo {
 		}
 
 		.spotlights > section:nth-child(4) {
+			background-color: rgba(0, 0, 0, 0.025);
+		}
+
+		section#four.wrapper.style2.spotlights {
+			padding-bottom: 5%;
+			background-color: rgba(0, 0, 0, 0.025)
+		}
+
+		.spotlights > section:nth-child(5) {
 			background-color: rgba(0, 0, 0, 0.025);
 		}
 
@@ -3573,18 +3582,22 @@ section img.headerLogo {
 
 		}
 
-	#footer > .inner a {
-		border-bottom-color: rgba(255, 255, 255, 0.15);
-	}
 
 		#footer > .inner a:hover {
-			border-bottom-color: transparent;
+			border-bottom-color: none;
 		}
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.15);
+		color: rgba(0, 0, 0, 0.5);
+		margin-left: 10%;
 	}
+
+	#footer#contactFooter > div > ul {
+		font-size: 0.8em;
+		margin-left: 8%;
+	}
+
 
 	#header + #wrapper + #footer > .inner {
 		margin: 0 auto;
@@ -3950,9 +3963,9 @@ section img.headerLogo {
 		background: linear-gradient(to top, #00000093, #00000093), url(images/wedding-mr-and-mrs-table-setting-1-horizontal.jpg) no-repeat top center;
 
 		/*background-image: url("images/wedding-mr-and-mrs-table-setting-1-horizontal.jpg");*/
-		background-position: top right;
+		/*background-position: top right; */
 		background-repeat: no-repeat;
-		background-size: 100% 100%;
+		background-size: auto 100%;
 	}
 
 	
