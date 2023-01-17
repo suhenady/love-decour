@@ -157,8 +157,8 @@ section img.headerLogo {
 
 	body, input, select, textarea {
 		color: rgba(23, 25, 23, 0.95);
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 16.5pt;
+		font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+		font-size: 1.5rem;
 		font-weight: normal;
 		line-height: 1.75;
 	}
@@ -166,7 +166,7 @@ section img.headerLogo {
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 1.25rem;
 			}
 
 		}
@@ -174,7 +174,7 @@ section img.headerLogo {
 		@media screen and (max-width: 1280px) {
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 1.25rem;
 			}
 
 		}
@@ -182,7 +182,7 @@ section img.headerLogo {
 		@media screen and (max-width: 360px) {
 
 			body, input, select, textarea {
-				font-size: 11pt;
+				font-size: 1rem;
 			}
 
 		}
@@ -220,8 +220,9 @@ section img.headerLogo {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #2C5B0D;
+		color: #112B00;
 		font-weight: bold;
+		font-family: 'Crimson Text', 'Roboto Condensed', Arial, Helvetica, sans-serif;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
 	}
@@ -1887,7 +1888,7 @@ section img.headerLogo {
 		color: #112405 !important;
 		cursor: pointer;
 		display: inline-block;
-		font-size: 0.6em;
+		font-size: 0.7em;
 		font-weight: bold;
 		height: calc(4.75em + 2px);
 		letter-spacing: 0.25em;
@@ -3450,7 +3451,7 @@ section img.headerLogo {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #112b00;
+		background-color: #607355;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3607,7 +3608,7 @@ section img.headerLogo {
 
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
-		background: #0e1d05;
+		background: #607355;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3837,26 +3838,27 @@ section img.headerLogo {
 				border-radius: 0.2em;
 				bottom: 0;
 				content: '';
-				height: 0.2em;
+				height: 0.1em;
 				position: absolute;
 				right: 0;
 				width: 100%;
 			}
 
 			#sidebar nav a:before {
-				background: #4E802D;
+				background: #efe6b1;
 			}
 
 			#sidebar nav a:after {
-				background-image: -moz-linear-gradient(to right, #D79922, #efe6b1);
-				background-image: -webkit-linear-gradient(to right, #D79922, #efe6b1);
-				background-image: -ms-linear-gradient(to right, #D79922, #efe6b1);
-				background-image: linear-gradient(to right, #D79922, #efe6b1);
+				background-image: -moz-linear-gradient(to right, #efe6b1, #ffffff);
+				background-image: -webkit-linear-gradient(to right, #efe6b1, #ffffff);
+				background-image: -ms-linear-gradient(to right, #efe6b1, #ffffff);
+				background-image: linear-gradient(to right, #efe6b1, #ffffff);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
 				transition: max-width 0.2s ease;
 				max-width: 0;
+				height: 0.2em;
 			}
 
 			#sidebar nav a:hover {
@@ -3997,11 +3999,11 @@ section img.headerLogo {
 
 		}
 
-		div.inner section.team {
+		/*div.inner section.team {
 			display: flex;
 			justify-content:space-between;
 			margin-top: 10%;
-		}
+		}*/
 
 		/*@keyframes slidy {
 			0% { left: 0%; }
