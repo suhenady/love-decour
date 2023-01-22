@@ -199,7 +199,7 @@ section img.headerLogo {
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #ffffff;
+			color: #607355;
 		}
 
 	strong, b {
@@ -1885,7 +1885,7 @@ section img.headerLogo {
 		border: solid 1px !important;
 		border-color: rgba(17, 36, 5, 0.3) !important;
 		border-radius: 3em;
-		color: #112405 !important;
+		color: #112B00 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.7em;
@@ -1904,7 +1904,7 @@ section img.headerLogo {
 
 	a.button.scrolly.header {
 		color:white !important;
-		border-color: hsla(0, 0%, 100%, 0.3) !important;
+		border-color: hsla(0, 0%, 100%, .75) !important;
 	}
 
 		input[type="submit"]:after,
@@ -1970,7 +1970,7 @@ section img.headerLogo {
 		button.primary,
 		.button.primary {
 			background-color: #FFE7CB;
-			color: #112405 !important;
+			color: #112B00 !important;
 		}
 
 			input[type="submit"].primary:after,
@@ -2000,7 +2000,7 @@ section img.headerLogo {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: rgba(17, 36, 5, 0.5) !important;
+			border-color: rgba(17, 36, 5, 0.75) !important;
 		}
 
 			input[type="submit"]:hover:after,
@@ -2020,7 +2020,7 @@ section img.headerLogo {
 			input[type="button"]:hover:active,
 			button:hover:active,
 			.button:hover:active {
-				border-color: #ffffff !important;
+				border-color: #607355 !important;
 			}
 
 				input[type="submit"]:hover:active:after,
@@ -2350,7 +2350,7 @@ section img.headerLogo {
 		}
 
 	label {
-		color: #112405;
+		color: #112B00;
 		font-weight: bold;
 		line-height: 1.5;
 		margin: 0 0 0.7em 0;
@@ -2675,8 +2675,16 @@ section img.headerLogo {
 				width: 100%;
 			}
 
-	/*.imageGrid {
+	/*.image.fit on mobile */ 
 	
+	/*@media (max-width: 600px){
+
+		.image.fit img{
+			display: grid;
+			row-gap: repeat(2,1fr);
+			column-gap: 6px;
+			width: 50%;
+		}
 	}*/
 
 /* List */
@@ -3845,7 +3853,7 @@ section img.headerLogo {
 			}
 
 			#sidebar nav a:before {
-				background: #efe6b1;
+				background: #7C886F;
 			}
 
 			#sidebar nav a:after {
@@ -3942,7 +3950,7 @@ section img.headerLogo {
 
 						#sidebar nav a:after {
 							background-image: none;
-							background-color: #4f8815;
+							background-color: #ffffff;
 						}
 
 		}
