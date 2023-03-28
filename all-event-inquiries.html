@@ -12,11 +12,25 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
+
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
+
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Great+Vibes&family=Ropa+Sans&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 	</head>
 	<body class="is-preload">
 
@@ -55,7 +69,7 @@
                             <!-- Start Hyperspace Form -->
 								<section>
 									<h2>Love DeCour Event Inquiry Form</h2>
-									<form method="post" action="#">
+									<form name="Event Inquiry" action="POST" data-netlify="true">
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
 												<input type="text" name="demo-name" id="demo-name" value="" placeholder="First and Last Name" />
@@ -122,14 +136,6 @@
                                                     <option value="day-of-planning">Day of Planning</option>
 												</select>
 											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy" checked>
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-human" name="demo-human">
-												<label for="demo-human">Not a robot</label>
-											</div>
 											<div class="col-12">
 												<textarea name="demo-message" id="demo-message" placeholder="Enter your message and any additional notes on your event." rows="6"></textarea>
 											</div>
@@ -142,6 +148,13 @@
 													<option value="Facebook">Facebook</option>
                                                     <option value="Other">Other</option>
 												</select>
+											</div>
+											<div class="col-6 col-12-small">
+												<input type="checkbox" id="demo-copy" name="demo-copy" checked>
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div>
+												<div data-netlify-recaptcha="true"></div>
 											</div>
 											<div class="col-12">
 												<ul class="actions">
