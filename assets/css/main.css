@@ -222,7 +222,7 @@ section img.headerLogo {
 	h1, h2, h3, h4, h5, h6 {
 		color: #112B00;
 		font-weight: bold;
-		font-family: 'Crimson Text', 'Roboto Condensed', Arial, Helvetica, sans-serif;
+		font-family: 'Staatlitches', 'Roboto Condensed', Arial, Helvetica, sans-serif;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
 	}
@@ -237,7 +237,7 @@ section img.headerLogo {
 	}
 
 	h1 {
-		font-size: 2.75em;
+		font-size: 2em;
 	}
 
 		h1.major {
@@ -265,7 +265,7 @@ section img.headerLogo {
 			}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 1.5em;
 	}
 
 	h3 {
