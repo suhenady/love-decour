@@ -2,7 +2,7 @@ Hyperspace by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-This theme has been updated for Love DeCour's event planning, design and decor business based in Atlanta, GA. Check out the current draft here: https://silver-alpaca-375227.netlify.app/. Next stop is updating gallery.
+This theme has been updated for Love DeCour's event planning, design and decor business based in Atlanta, GA. Check out the current draft here: https://silver-alpaca-375227.netlify.app/. Next stop is updating gallery. Coding updates have been made to the display on the navigation for desktop.
 
 
 So I've had the wireframe for this particular design kicking around for some time, but with all
