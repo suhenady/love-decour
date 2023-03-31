@@ -116,19 +116,19 @@ input, select, textarea {
 
 section.headerSubpage img.headerLogo {
 	max-width: 10%;
-	margin: 5% 0 0 47%;
+	margin: 10% 0 0 42.5%;
 }
 
 section img.headerLogo {
 	max-width: 15%;
-	margin: 5% 0 0 54%;
+	margin: 10% 0 0 42.5%;
 }
 
 @media screen and (max-width: 1680px) {
 
 	section img.headerLogo {
 		max-width: 15%;
-		margin: 5% 0 0 54%;
+		margin: 10% 0 0 42.25%;
 	}
 
 }
@@ -136,8 +136,8 @@ section img.headerLogo {
 @media screen and (max-width: 1280px) {
 
 	section img.headerLogo {
-		max-width: 20%;
-		margin: 12% 0 0 40.5%;
+		max-width: 30%;
+		margin: 15% 0 0 35%;
 	}
 
 }
@@ -222,7 +222,7 @@ section img.headerLogo {
 	h1, h2, h3, h4, h5, h6 {
 		color: #112B00;
 		font-weight: bold;
-		font-family: 'Crimson Text', 'Roboto Condensed', Arial, Helvetica, sans-serif;
+		font-family: 'Staatlitches', 'Roboto Condensed', Arial, Helvetica, sans-serif;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
 	}
@@ -3554,12 +3554,13 @@ section img.headerLogo {
 /* Wrapper (main) */
 
 	#sidebar + #wrapper {
-		margin-left: 18em;
-	}
+		margin: 0;
+	} 
 
 		@media screen and (max-width: 1280px) {
 
 			#sidebar + #wrapper {
+				/* After moving nav to horizontal top, change margin-left to zero to fill open space where navigation used to be. */
 				margin-left: 0;
 			}
 
@@ -3579,9 +3580,11 @@ section img.headerLogo {
 
 /* Footer */
 
+	/* Commented this out to have sections, header and footer take up the full width of page where sidebar was.*/
 	#sidebar + #wrapper + #footer {
-		margin-left: 18em;
-	}
+		/* After moving nav to horizontal top, change margin-left to zero to fill open space where navigation used to be. */
+		margin-left: 0em;
+	} 
 
 		@media screen and (max-width: 1280px) {
 
@@ -3599,7 +3602,7 @@ section img.headerLogo {
 	#footer > .inner .menu {
 		font-size: 0.8em;
 		color: rgba(0, 0, 0, 0.5);
-		margin-left: 10%;
+		margin-left: 0;
 	}
 
 	#footer#contactFooter > div > ul {
@@ -3613,7 +3616,7 @@ section img.headerLogo {
 	}
 
 /* Sidebar */
-
+/* OG sidebar CSS
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
 		background: #607355;
@@ -3627,9 +3630,24 @@ section img.headerLogo {
 		top: 0;
 		width: 18em;
 		z-index: 10000;
-	}
+	} */
 
-		#sidebar > .inner {
+/* My updated sidebar CSS to move navigation to top and horizontal center */
+#sidebar {
+	padding: 2.5em 2.5em 0.5em 2.5em ;
+	background: #607355;
+	cursor: default;
+	height: 5.17em;
+	line-height:3.5em;
+	left: 0;
+	overflow: hidden;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+}
+		/* OG */ #sidebar > .inner {
 			display: -moz-flex;
 			display: -webkit-flex;
 			display: -ms-flex;
@@ -3653,7 +3671,35 @@ section img.headerLogo {
 			min-height: 100%;
 			opacity: 1;
 			width: 100%;
-		}
+		} 
+
+		/* My update to sidebar inner 
+		#sidebar > .inner {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-direction: row;
+			-webkit-flex-direction: row;
+			-ms-flex-direction: row;
+			flex-direction: row;
+			-moz-justify-content: row;
+			-webkit-justify-content: row;
+			-ms-justify-content: row;
+			justify-content: space-evenly;
+			-moz-transform: translateX(0);
+			-webkit-transform: translateX(0);
+			-ms-transform: translateX(0);
+			transform: translateX(0);
+			-moz-transition: opacity 1s ease;
+			-webkit-transition: opacity 1s ease;
+			-ms-transition: opacity 1s ease;
+			transition: opacity 1s ease;
+			min-height: 100%;
+			opacity: 1;
+			width: 100%;
+		} */
+
 
 			body.is-ie #sidebar > .inner {
 				height: 100%;
@@ -3662,6 +3708,9 @@ section img.headerLogo {
 		#sidebar nav > ul {
 			list-style: none;
 			padding: 0;
+			/* below updates make nav ul flex horizontally with even space between each*/
+			display: flex;
+			justify-content: space-evenly;
 		}
 
 			#sidebar nav > ul > li {
@@ -3673,7 +3722,8 @@ section img.headerLogo {
 				-webkit-transition: opacity 0.15s ease, -webkit-transform 0.75s ease;
 				-ms-transition: opacity 0.15s ease, -ms-transform 0.75s ease;
 				transition: opacity 0.15s ease, transform 0.75s ease;
-				margin: 1.5em 0 0 0;
+				/* Remove top margin that made 'Welcome' higher than the rest of the nav.
+				margin: 1.5em 0 0 0; */
 				opacity: 1;
 				padding: 0;
 				position: relative;
@@ -3847,7 +3897,7 @@ section img.headerLogo {
 				bottom: 0;
 				content: '';
 				height: 0.1em;
-				position: absolute;
+				position: fixed;
 				right: 0;
 				width: 100%;
 			}
@@ -3924,6 +3974,10 @@ section img.headerLogo {
 					line-height: inherit;
 				}
 
+				#sidebar > .inner > nav {
+					width: 900px;
+				} 
+
 					#sidebar nav ul {
 						display: -moz-flex;
 						display: -webkit-flex;
@@ -3935,7 +3989,8 @@ section img.headerLogo {
 					}
 
 						#sidebar nav ul li {
-							display: block;
+							display: flex;
+							justify-content: space-evenly;
 							height: inherit;
 							line-height: inherit;
 							margin: 0 0 0 2em;
@@ -3975,7 +4030,8 @@ section img.headerLogo {
 		/*background-image: url("images/wedding-mr-and-mrs-table-setting-1-horizontal.jpg");*/
 		/*background-position: top right; */
 		background-repeat: no-repeat;
-		background-size: auto 100%;
+		/* Change background-size from 'auto 100%' to just '100%' to fill up entire available space of background vs looking like it had left and right margins. */
+		background-size: 100%;
 	}
 
 	
@@ -4038,3 +4094,6 @@ section img.headerLogo {
 			  animation: 30s slidy infinite; 
 			}*/
 		
+			section.team > section#herbertta {
+				margin: 5% 0 5% 0;
+			}
