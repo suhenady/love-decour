@@ -874,6 +874,18 @@ section img.headerLogo {
 				align-items: stretch;
 			}
 
+				/* Make image grid responsive on homepage for tablet. */
+				.row.imageCol > .col-4 {
+					flex-direction: column;
+					width: 50%;
+				}
+
+				/* Make image grid responsive on About Love Decour page for tablet. */
+				.row.gtr-uniform > .col-4 {
+					flex-direction: column;
+					width: 50%;
+				}
+
 				.row > * {
 					box-sizing: border-box;
 				}
@@ -1118,6 +1130,18 @@ section img.headerLogo {
 				box-sizing: border-box;
 				align-items: stretch;
 			}
+			
+				/* Make image grid responsive on homepage for mobile. */
+				.row.imageCol > .col-4 {
+					flex-direction: column;
+					width: 50%;
+				}
+
+				/* Make image grid responsive on About Love Decour page for mobile. */
+				.row.gtr-uniform > .col-4 {
+					flex-direction: column;
+					width: 50%;
+				}
 
 				.row > * {
 					box-sizing: border-box;
@@ -1363,6 +1387,18 @@ section img.headerLogo {
 				box-sizing: border-box;
 				align-items: stretch;
 			}
+
+				/* Make image grid responsive on homepage for mobile. */
+				.row.imageCol > .col-4 {
+					flex-direction: column;
+					width: 100%;
+				}
+
+				/* Make image grid responsive on About Love Decour page for mobile. */
+				.row.gtr-uniform > .col-4 {
+					flex-direction: column;
+					width: 100%;
+				}
 
 				.row > * {
 					box-sizing: border-box;
@@ -4031,7 +4067,7 @@ section img.headerLogo {
 		/*background-position: top right; */
 		background-repeat: no-repeat;
 		/* Change background-size from 'auto 100%' to just '100%' to fill up entire available space of background vs looking like it had left and right margins. */
-		background-size: 100%;
+		background-size: cover;
 	}
 
 	
@@ -4059,6 +4095,7 @@ section img.headerLogo {
 
 			#intro {
 				background-attachment: scroll;
+				background-size: cover;
 			}
 
 		}
