@@ -237,7 +237,8 @@ section img.headerLogo {
 	}
 
 	h1 {
-		font-size: 2em;
+		font-size: 2.5em;
+		text-align: center;
 	}
 
 		h1.major {
@@ -2672,7 +2673,7 @@ section img.headerLogo {
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 100%;
 		}
 
 			.image.left img, .image.right img {
@@ -2710,6 +2711,7 @@ section img.headerLogo {
 			.image.main img {
 				width: 100%;
 			}
+
 
 	/*.image.fit on mobile */ 
 	
@@ -3523,7 +3525,7 @@ section img.headerLogo {
 
 				#header > nav > ul > li {
 					display: inline-block;
-					margin-left: 1.75em;
+					margin-left: 1em;
 					padding: 0;
 					vertical-align: middle;
 				}
@@ -3558,6 +3560,7 @@ section img.headerLogo {
 
 		}
 
+
 		@media screen and (max-width: 480px) {
 
 			#header {
@@ -3576,14 +3579,23 @@ section img.headerLogo {
 					text-align: inherit;
 				}
 
-					#header > nav > ul > li {
-						margin-left: 1.5em;
-					}
+					/*#header > nav > ul > li {
+						margin-left: .4em;
+					}*/
 
 						#header > nav > ul > li a {
 							height: 6em;
 							line-height: 6em;
 						}
+
+		}
+
+		@media only screen and (min-width: 280px) and (max-width: 767px) {
+
+
+			#header > nav > ul > li {
+				margin-left: .68%;
+			}
 
 		}
 
@@ -4061,7 +4073,7 @@ section img.headerLogo {
 
 	#intro {
 		background-attachment: fixed;
-		background: linear-gradient(to top, #00000093, #00000093), url(images/wedding-mr-and-mrs-table-setting-1-horizontal.jpg) no-repeat top center;
+		background: linear-gradient(to top, #00000069, #00000069), url(images/wedding-mr-and-mrs-table-setting-1-horizontal.jpg) no-repeat top center;
 
 		/*background-image: url("images/wedding-mr-and-mrs-table-setting-1-horizontal.jpg");*/
 		/*background-position: top right; */
@@ -4132,5 +4144,11 @@ section img.headerLogo {
 			}*/
 		
 			section.team > section#herbertta {
-				margin: 5% 0 5% 0;
+				margin: 6.25% 0 6.25% 0;
 			}
+				@media screen and (max-width: 736px) { 
+
+					section.team > section#herbertta {
+						margin: 12.5% 0 12.5% 0;
+						}
+				}
